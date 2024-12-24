@@ -3,91 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSavers</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>TechSavers - Reparación y Tecnología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        .service {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>TechSavers</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>TechSavers</h1>
+        <p>Soluciones tecnológicas a tu medida</p>
     </header>
-
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>Welcome to TechSavers</h2>
-            <p>We provide the best tech repair and support services. From fixing your devices to offering consultations, we've got you covered.</p>
-        </section>
-
-        <!-- Search Section -->
-        <section id="search">
-            <h2>Search Our Services</h2>
-            <input type="text" id="searchInput" placeholder="Search services...">
-            <ul id="searchResults"></ul>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Device Repairs</li>
-                <li>Tech Consultations</li>
-                <li>Software Installation</li>
-                <li>Data Recovery</li>
-            </ul>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <img src="https://via.placeholder.com/200" alt="Service 1">
-                <img src="https://via.placeholder.com/200" alt="Service 2">
-                <img src="https://via.placeholder.com/200" alt="Service 3">
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+        <a href="#about">Nosotros</a>
+    </nav>
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service">
+            <div>
+                <h3>Reparación de laptops</h3>
+                <p>Diagnóstico, limpieza, y reparaciones avanzadas.</p>
             </div>
-        </section>
-
-        <!-- Map Section -->
-        <section id="map">
-            <h2>Find Us</h2>
-            <div id="mapContainer"></div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 TechSavers. Follow us:</p>
-        <div class="social-icons">
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+            <p>Desde $30</p>
         </div>
+        <div class="service">
+            <div>
+                <h3>Ensamblaje de PCs</h3>
+                <p>Construimos tu PC ideal para gaming o trabajo.</p>
+            </div>
+            <p>Desde $50</p>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Reparación de consolas</h3>
+                <p>Soluciones para Xbox, PlayStation y más.</p>
+            </div>
+            <p>Desde $40</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="about">
+        <h2>Sobre nosotros</h2>
+        <p>En TechSavers nos especializamos en ofrecer servicios técnicos confiables y de calidad. Nuestro objetivo es garantizar la satisfacción del cliente y maximizar el rendimiento de tus dispositivos tecnológicos.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 TechSavers - Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
